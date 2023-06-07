@@ -1,0 +1,41 @@
+\input{../header.tex}
+
+\subject{VERSUCH NUMMER 500}
+\title{Der Photoeffekt}
+\date{
+  Durchführung: 06.06.2023
+  \hspace{3em}
+  Abgabe: 13.06.2023
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+\input{ziel.tex}
+\input{theorie.tex}
+\input{aufbau.tex}
+\input{durchfuehrung.tex}
+\input{auswertung.tex}
+\input{diskussion.tex}
+
+\newpage
+\printbibliography
+\nocite{ap500}
+\nocite{matplotlib}
+\nocite{numpy}
+\nocite{scipy}
+\nocite{uncertainties}
+\nocite{reback2020pandas}
+
+\newpage
+\includepdf[scale=0.7,pages=1,pagecommand=\section*{Anhang}\thispagestyle{empty}]{messdaten1.pdf}
+\addcontentsline{toc}{section}{\protect\numberline{}Anhang}
+\includepdf[scale = 0.7, pages=-]{messdaten2.pdf}
+\includepdf[scale = 0.7, pages=-]{messdaten3.pdf}
+\includepdf[scale = 0.7, pages=-]{messdaten4.pdf}
+
+\end{document}
