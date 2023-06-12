@@ -1,60 +1,3 @@
-\section{Auswertung}
-\label{sec:Auswertung}
-
-\input{fehlerrechnung.tex}
-
-\subsection{Bestimmung der Grenzspannung}
-\label{sec:Auswertunga}
-
-Zur Bestimmung der Grenzspannung $U_{\text{g}}$ wird eine Ausgleichsgerade durch die Messwerte gelegte. Hierbei ist zu beachten, dass die Ausgleichsgerade die linearen Abschnitte der hauptsächlich Bremsspannung umfasst.
-Die Nullstelle dieser Geraden ist dann die gesuchte Spannung. Für $U_{\text{g}}$ folgt somit
-\begin{equation}
-    U_{\text{g}}=-a/b\, .
-    \label{eqn:U_g}
-\end{equation}
-
-Die in \autoref{fig:rot} dargestellten Messwerte mit der dazugehörigen Ausgleichsgeraden liefern die Funktionsparameter 
-\begin{align*}
-    a_{\text{rot}}&=(4.18\pm 0.33) \, \unit{\frac{\ampere ^{1/2}}{\volt}}\\
-    b_{\text{rot}}&=(3.41\pm 0.06) \, \unit{\ampere}^{1/2}\, .\\
-\end{align*}
-Draus folgt gemäß \autoref{eqn:U_g} ein Wert von $U_{\text{g,rot}}=(-0.82\pm 0.07)\, \unit{\volt}$.
-\begin{figure}
-    \centering
-    \includegraphics[height = 8cm]{build/plotrot.pdf}
-    \caption{Regression zur Bestimmung der Grenzspannung $U_{\symup{g}}$ der roten Spektrallinie.}
-    \label{fig:rot}
-\end{figure}
-Anlog zur Bestimmung von $U_{\text{g}}$ des roten Lichtes wurde die Grenzspannung der anderen beiden Wellenlängen 
-berechnet.
-Die Messwerte und Ausgleichsgerade des grünen Lichtes ist in \autoref{fig:gruen} aufgetragen.
-\begin{align*}
-    a_{\text{grün}}&=(34.50\pm 1.40) \, \unit{\frac{\ampere ^{1/2}}{\volt}}\\
-    b_{\text{grün}}&=(23.90\pm 0.50) \, \unit{\ampere}^{1/2}\, .\\
-    \Rightarrow U_{\text{g,grün}}&=(-0.69\pm 0.03)\, \unit{\volt}\\
-\end{align*}
-
-\begin{figure}
-    \centering
-    \includegraphics[height = 8cm]{build/plotgruen.pdf}
-    \caption{Regression zur Bestimmung der Grenzspannung $U_{\symup{g}}$ der grünen Spektrallinie.}
-    \label{fig:gruen}
-\end{figure}
-
-Die Messwerte und Ausgleichsgerade des grünen Lichtes ist in \autoref{fig:lila} aufgetragen.
-\begin{align*}
-    a_{\text{lila}}&=(0.80\pm 0.030) \, \unit{\frac{\ampere ^{1/2}}{\volt}}\\
-    b_{\text{lila}}&=(0.98\pm 0.01) \, \unit{\ampere}^{1/2}\, .\\
-    \Rightarrow U_{\text{g,lila}}&=(-1.22\pm 0.04)\, \unit{\volt}\\
-\end{align*}
-
-\begin{figure}
-    \centering
-    \includegraphics[height = 8cm]{build/plotlila.pdf}
-    \caption{Regression zur Bestimmung der Grenzspannung $U_{\symup{g}}$ der violetten Spektrallinie.}
-    \label{fig:lila}
-\end{figure}
-
 
 In \autoref{fig:gelb} wird der Verlauf des Photostroms bei einer Wellenlänge von $\lambda = 578 \,\unit{\nm}$ dargestellt. Dabei wurde ein größeres 
 Intervall der anliegenden Spannung betrachtet. 
@@ -83,4 +26,3 @@ Grundsätzlich kann ein kleiner entgegengerichteter Strom bei hohen Bremsspannun
 Bei der violetten Spektrallinie in \autoref{tab:lila} jedoch schon. Dieser ist damit zu erklären, dass das Kathodenmaterial bei $T=20°\,\unit{\celsius}$ 
 verdampft, wodurch Elektronen freigesetzt werden und sich an der Anode anlagern. Das führt dazu, dass die Elektronen wegen der hohen Bremsspannung von der 
 Anode wegbeschleunigt werden und es wird ein negativer Strom gemessen.
-
