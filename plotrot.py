@@ -31,7 +31,7 @@ xaxis=np.linspace(-2,2,10)
 
 print('ua',ua)
 print('ub',ub)
-plt.plot(-0.8158,0,'xg',linewidth = 2, label = r'U_b', alpha=1)
+plt.plot(-0.8158,0,'xg',linewidth = 2, label = r'$U_{\mathrm{g}}$$', alpha=1)
 plt.plot(xaxis, null(xaxis) ,'black',linewidth = 1, alpha=0.5)
 plt.plot(xx, g(xx, *para), 'orange', linewidth = 1, label = 'Ausgleichsfunktion', alpha=0.5)
 plt.plot(U1, sqrt(I1), 'xb', markersize=6 , label = 'Beschleunigung (V>0)', alpha=0.5)

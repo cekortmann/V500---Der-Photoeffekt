@@ -31,13 +31,13 @@ xaxis=np.linspace(-2,2,10)
 
 print('ua',ua)
 print('ub',ub)
-plt.plot(-1.2215,0,'xg',linewidth = 2, label = r'U_g', alpha=1)
+plt.plot(-1.2215,0,'xg',linewidth = 2, label = r'$U_{\mathrm{g}}$$', alpha=1)
 plt.plot(xaxis, null(xaxis) ,'black',linewidth = 1, alpha=0.5)
 plt.plot(xx, g(xx, *para), 'orange', linewidth = 1, label = 'Ausgleichsfunktion', alpha=0.5)
 plt.plot(U1, sqrt(I1), 'xb', markersize=6 , label = 'Beschleunigung (V>0)', alpha=0.5)
 plt.plot(U2, (I2)**(1/2), 'xr', markersize=6 , label = 'Bremsung (V<0)', alpha=0.5)
 plt.xlabel(r'$U \, / \, \mathrm{V}$')
-plt.ylabel(r'$\sqrt{I} \mathrm{/} \mathrm{nA}^{1/2} $')
+plt.ylabel(r'$\sqrt{I} \mathrm{/} \mathrm{pA}^{1/2} $')
 plt.legend(loc="best")                  # legend position
 plt.grid(True)                          # grid style
 plt.savefig('build/plotlila.pdf', bbox_inches = "tight")

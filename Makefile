@@ -9,7 +9,7 @@ build/v500.pdf: build/frequenz.pdf build/plotgruen.pdf build/plotlila.pdf build/
 build/plotrot.pdf:  rot.txt rot2.txt plotrot.py| build
 	python plotrot.py
 
-build/plotfrequenz.pdf:  frequenz.txt frequenz2.txt frequenz.py| build
+build/frequenz.pdf:  frequenz.txt frequenz2.txt frequenz.py| build
 	python frequenz.py
 
 build/plotgruen.pdf: gruen.txt gruen2.txt plotgruen.py| build

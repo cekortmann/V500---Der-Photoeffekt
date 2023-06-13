@@ -11,7 +11,7 @@ from uncertainties.unumpy import (nominal_values as noms,   # Wert:             
                                   std_devs as stds)  
 
 U1,I1= np.genfromtxt('gelb.txt', unpack= True, skip_header=1, skip_footer=19)
-U2,I2= np.genfromtxt('gelb.txt', unpack= True, skip_header=23)
+U2,I2= np.genfromtxt('gelb.txt', unpack= True, skip_header=24)
 def g(x,a,b):
     return a*x+b
 
@@ -22,7 +22,7 @@ def null(x):
 #plt.plot(xaxis, null(xaxis) ,'black',linewidth = 1, alpha=0.5)
 #plt.plot(xx, g(xx, *para), 'orange', linewidth = 1, label = 'Ausgleichsfunktion', alpha=0.5)
 plt.plot(U1, I1, 'xb', markersize=6 , label = 'Beschleunigung (V>0)', alpha=0.5)
-plt.plot(U2, I2, 'xr', markersize=6 , label = 'Bremsung ( V<0)', alpha=0.5)
+plt.plot(U2, I2, 'xr', markersize=6 , label = 'Bremsung (V<0)', alpha=0.5)
 plt.xlabel(r'$U \, / \, \mathrm{V}$')
 plt.ylabel(r'$I \mathrm{/} \mathrm{pA} $')
 plt.legend(loc="best")                  # legend position
