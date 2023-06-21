@@ -1,4 +1,4 @@
-\subsection{Bestimmung der Austrittsarbeit und des Verhältnisses $\frac{h}{e_0}$.}
+\subsection{Bestimmung der Austrittsarbeit und des Verhältnisses $\frac{h}{e_0}$}
 \label{sec:Auswertungb}
 
 In \autoref{tab:freq} befinden sich die Wellenlängen, die Frequenz und die zugehörige Grenzspannung. 
@@ -7,7 +7,7 @@ In \autoref{tab:freq} befinden sich die Wellenlängen, die Frequenz und die zuge
     \caption{Wellenlänge, Frequenz und zugehörige Grenzspannung.}
 \begin{tabular}{c c c}
     \toprule
-    $\lambda$ in nm &$\nu$ in $10^14\cdot$\,Hz & $U_{\symup{g}}$ in V  \\
+    $\lambda$ in nm &$\nu$ in $10^{14}\cdot$\,Hz & $U_{\symup{g}}$ in V  \\
     \midrule
     700 & 4.28271 & 0.8158\\ 
 546 & 5.49066 & 0.6930\\
@@ -23,26 +23,27 @@ Die Frequenz wurde dabei mit
 \end{equation*}
 berechnet. Die Wellenlängen wurden vorwiegend der Versuchsanleitung \cite{ap500} entnommen. Für die Wellenlänge von rotem Licht wurde 
 $700\,\unit{\nm}$ \cite{rot} gewählt.
-In \autoref{fig:freq} wurde nun der jeweilige Betrag Grenzspannung gegen die Frequenz aufgetragen und eine Ausgleichsrechnung mittels einer Geraden
-durchgeführt. Dabei wurde die Grenzspannung der grünen Spektrallinie für die Ausgleichsrechnung nicht beachtet, da sie sehr stark von dem Verlauf der 
-anderen Messungen sowie der theoretischen Erwartung, dass die Grenzspannung linear mit der Frequenz steigt, abweicht.
+In \autoref{fig:freq} wurde nun der jeweilige Betrag Grenzspannung gegen die Frequenz aufgetragen und eine Ausgleichsrechnung mittels einer Geraden 
+\begin{equation*}
+    y = ax+b
+\end{equation*}
+durchgeführt.
 \begin{figure}
     \centering
     \includegraphics[height = 8cm]{build/frequenz.pdf}
     \caption{Verlauf der Grenzspannungen in Abhängigkeit von der Frequenz.}
     \label{fig:freq}
 \end{figure}
-Dabei ergeben sich für die Steigung, welcher hier das Verhältnis $\frac{h}{\symup{e_0}}$ darstellt 
+Dabei ergeben sich für die Steigung, welche hier nach \autoref{eqn:nu} das Verhältnis $\frac{h}{\symup{e_0}}$ darstellt 
 \begin{equation*}
-    a = \frac{h}{\symup{e_0}} = 1.555 \cdot 10^{-15} \,\unit{\eV}
+    a = \frac{h}{\symup{e_0}} = (1.614 \pm 1.372) \cdot 10^{-15} \,\symup{Vs}
 \end{equation*}
 und den y-Achsenabschnitt
 \begin{equation*}
-    b = A_{\symup{k}} = 1.498 \,\unit{\eV} \; ,
+    b = A_{\symup{k}} = (0.014 \pm 0.776) \,\unit{\eV} \; ,
 \end{equation*}
 welcher hier der Austrittsarbeit $A_{\symup{k}}$ entspricht.
 
-Da bei der Ausgleichsrechnung nur zwei Werte betrachtet wurden, kann keine Fehlerabweichung angegeben werden.
 
 
 

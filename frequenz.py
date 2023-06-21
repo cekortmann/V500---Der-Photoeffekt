@@ -19,7 +19,7 @@ def g(x,a,b):
 def null(x):
     return 0*x
 
-para,pcov =curve_fit(g,nu2,Ug2)#,p0=[1,mean,sigma])
+para,pcov =curve_fit(g,nu,Ug)#,p0=[1,mean,sigma])
 a,b = para
 pcov = np.sqrt(np.diag(pcov))
 fa, fb = pcov
@@ -28,8 +28,8 @@ ub = ufloat(b, fb)
 
 xx= np.linspace(0,9,1000)
 
-print('ua',ua)
-print('ub',ub)
+print('ua','Result= {:.4u}'.format(ua))
+print('ub','Result= {:.4u}'.format(ub))
 
 plt.plot(xx, g(xx, *para), 'orange', linewidth = 1, label = 'Ausgleichsfunktion', alpha=0.5)
 plt.plot(nu, Ug, 'xb', markersize=6 , label = 'Grenzspannungen', alpha=0.5)

@@ -1,6 +1,6 @@
 all: build/v500.pdf
 
-build/v500.pdf: build/frequenz.pdf build/plotgruen.pdf build/plotlila.pdf build/plotgelb.pdf build/plotrot.pdf v500.tex aufbau.tex auswertung.tex diskussion.tex durchfuehrung.tex fehlerrechnung.tex lit.bib theorie.tex ziel.tex | build
+build/v500.pdf: x.tex build/frequenz.pdf build/plotgruen.pdf build/plotlila.pdf build/plotgelb.pdf build/plotrot.pdf v500.tex aufbau.tex auswertung.tex diskussion.tex durchfuehrung.tex fehlerrechnung.tex lit.bib theorie.tex ziel.tex | build
 	lualatex  --output-directory=build v500.tex
 	lualatex  --output-directory=build v500.tex
 	biber build/v500.bcf
